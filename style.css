@@ -1,0 +1,132 @@
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    
+}
+body {
+    background-color: moccasin;
+    background: linear-gradient( #ffe4b5, #ecb454);
+}
+
+.fnt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    text-align: center;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Apply styles to the p element */
+p {
+    font-size: 18px;
+}
+
+.cont {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    margin: 5px;
+    background: linear-gradient(to bottom, moccasin , rgb(241, 209, 153));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.imgg {
+    float: left;
+    text-align: center;
+    display: inline;
+    margin:0 auto;
+    opacity: 0.85;
+    border-radius: 5%;
+    width: 50%;
+}
+
+ol {
+    font-size: large;
+}
+
+.lscont {
+    background-color: antiquewhite;
+    line-height: 2;
+    border-color: rgb(255, 153, 0);;
+    padding-right: 20px;
+    border-width: 0.5px;
+    display: inline-block;
+    border-style: solid;
+    background: linear-gradient(to bottom, moccasin , rgb(241, 209, 153));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.lsp {
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+}
+a {
+    color: blueviolet;
+}
+
+.navpan {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: antiquewhite;
+    border-color: orange;
+}
+
+.navpan>nav>ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navpan>nav>ul>li>button {
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-color: orange;
+    background-color: moccasin;
+    border-width: 0.5px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .navpan {
+        flex-direction: column;
+    }
+}
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #e66800, 0 0 20px #e66800, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #ff9d4d, 0 0 20px #ff9d4d, 0 0 30px #ff9d4d, 0 0 40px #ff9d4d, 0 0 50px #ff9d4d, 0 0 60px #ff9d4d;
+    }
+  }
